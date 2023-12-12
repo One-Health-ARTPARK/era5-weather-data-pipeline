@@ -320,8 +320,8 @@ if __name__ == "__main__":
 
     print('')
 
-    #output_netcdf_file = download_era5_data(variable, year, month_input, times, region, dataset)
-    output_netcdf_file = '/home/onehealth/ARTPARK/ERA/9KM_Resolution/RawData/dewpoint/era5_land_2m_dewpoint_temperature_2022_Karnataka.nc'
+    output_netcdf_file = download_era5_data(variable, year, month_input, times, region, dataset)
+    #output_netcdf_file = '/home/onehealth/ARTPARK/ERA/9KM_Resolution/RawData/dewpoint/era5_land_2m_dewpoint_temperature_2022_Karnataka.nc'
     extracted_raw_data = extract_raw_data(output_netcdf_file, dataset)
     #extracted_raw_data = 'era5_land_2m_dewpoint_temperature_2022_Karnataka.csv'
     input_filename = os.path.basename(extracted_raw_data)
