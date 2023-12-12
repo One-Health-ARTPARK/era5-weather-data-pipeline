@@ -14,12 +14,11 @@ This Python script is designed to download, process, and aggregate ERA-5 and ERA
   - [Data Processing and Aggregation Functions](#data-processing-and-aggregation-functions)
   - [Main Execution](#main-execution)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Important Notes](#important-notes)
 
 ## Overview
 
-The provided Python script is designed to download, process, and aggregate ERA-5 and ERA-5 Land reanalysis data for specific variables, years, months, and regions. The script interacts with the Climate Data Store (CDS) API, performs spatial processing using GeoJSON files, and allows users to aggregate the data temporally. The processed and aggregated data is saved in CSV format.
+The provided Python script is designed to download, process, and aggregate ERA-5 and ERA-5 Land data for specific variables, years, months, and regions. The script interacts with the Climate Data Store (CDS) API, performs spatial processing using GeoJSON files, and allows users to aggregate the data on a weekly basis. The processed and/or aggregated data is saved in CSV format.
 
 ## Libraries Used
 
@@ -27,17 +26,14 @@ The provided Python script is designed to download, process, and aggregate ERA-5
 2. **xarray (as xr)**: Used for working with labeled multi-dimensional arrays (NetCDF files).
 3. **pandas (as pd)**: Used for data manipulation and CSV file operations.
 4. **fuzzywuzzy**: Used for fuzzy string matching during user input.
-5. **numpy (as np)**: Used for numerical operations.
-6. **geopandas (as gpd)**: Used for working with geospatial data.
-7. **shapely.geometry**: Used for creating geometric objects for spatial operations.
-8. **boto3**: Used for interaction with Amazon Web Services (AWS) S3 storage.
-9. **tempfile, copy, warnings**: Used for handling temporary files, copying data, and managing warnings.
+5. **geopandas (as gpd)**: Used for working with geospatial data.
+6. **shapely.geometry**: Used for creating geometric objects for spatial operations.
 
 ## Script Structure
 
 ### Import Statements
 
-The script begins by importing necessary libraries and modules. Notable imports include CDS API client (`cdsapi`), data manipulation libraries (`pandas`, `xarray`), geospatial libraries (`geopandas`, `shapely.geometry`), and AWS S3 interaction (`boto3`).
+The script begins by importing necessary libraries and modules. Notable imports include CDS API client (`cdsapi`), data manipulation libraries (`pandas`, `xarray`), and geospatial libraries (`geopandas`, `shapely.geometry`).
 
 ### User Input Functions
 
@@ -77,8 +73,18 @@ The script's main execution follows these steps:
 
 4. **Spatial Processing and Aggregation:** Processes spatial data and aggregates it based on quarters.
 
-5. **Data Saving:** Saves the processed and aggregated data in CSV format.
+5. **Data Saving:** Saves the processed and/or aggregated data in CSV format.
 
 ## Usage
 
-1. Clone the repository:
+1. Clone the repository.
+2. Install dependencies.
+3. Create a nano script with respective CDSAPI credentials in your home directory.
+4. Run the script: python weather_data_pipeline.py
+
+## Important Notes
+
+1. Modify the config.py file as per requirements.
+2. Aggregation is possible for a total of 230 subdistricts for Karnataka and 6 zones for BBMP.
+3. All weather variables are in the same unit as specified by ERA. No modifications has been done with respect to this.
+4. Note that the complete process - downloading, extraction, processing and aggregation for a single weather variable of a single year will take approximately 25-35 minutes. Kindly, check and re-run the script if it is taking more time than mentioned.
