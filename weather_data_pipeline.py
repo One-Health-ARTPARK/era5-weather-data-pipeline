@@ -109,7 +109,7 @@ def extract_raw_data(netcdf_file, dataset):
 
 def coordinates_to_karnataka_hierarchy(df):
 
-    subdistrict_directory = 'geojson/subdistricts'
+    subdistrict_directory = 'geojsons/geojson_KA/subdistricts'
     subdistrict_gdf = gpd.GeoDataFrame()
 
     for filename in os.listdir(subdistrict_directory):
@@ -118,7 +118,7 @@ def coordinates_to_karnataka_hierarchy(df):
             subdistrict_data = gpd.read_file(filepath)
             subdistrict_gdf = pd.concat([subdistrict_gdf, subdistrict_data])
 
-    district_directory = 'geojson/districts'
+    district_directory = 'geojsons/geojson_KA/districts'
     district_gdf = gpd.GeoDataFrame()
 
     for filename in os.listdir(district_directory):
@@ -155,7 +155,7 @@ def coordinates_to_karnataka_hierarchy(df):
     return df_result
 
 def coordinates_to_bbmp_hierarchy(df):    
-    district_directory = 'geojson_bbmp'
+    district_directory = 'geojsons/geojson_bbmp'
     district_gdf = gpd.GeoDataFrame()
 
     for filename in os.listdir(district_directory):
