@@ -79,8 +79,12 @@ The script's main execution follows these steps:
 
 1. Clone the repository.
 2. Install dependencies.
-3. Create a nano script with respective CDSAPI credentials in your home directory.
-4. Run the script: python weather_data_pipeline.py
+3. Sign up on the CDS Website. Copy the URL, UID and API_KEY.
+4. Create a nano script in the terminal by executing - nano ~/. cdsapirc
+5. Paste the URL, UID and API_KEY as:
+   url: <paste_url_here>
+   key: <paste_uid_here>:<paste_apikey_here>
+6. Run the script: python weather_data_pipeline.py
 
 ## Important Notes
 
