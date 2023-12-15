@@ -88,3 +88,4 @@ The script's main execution follows these steps:
 2. Aggregation is possible for a total of 230 subdistricts for Karnataka and 6 zones for BBMP.
 3. All weather variables are in the same unit as specified by ERA. No modifications has been done with respect to this.
 4. Note that the complete process - downloading, extraction, processing and aggregation for a single weather variable of a single year will take approximately 25-35 minutes. Kindly, check and re-run the script if it is taking more time than mentioned.
+5. Requires more than 4GB of RAM. Cannot be executed on our aihub server.
