@@ -1,6 +1,6 @@
 # ERA-5 and ERA-5 Land Data Extraction and Processing Pipeline
 
-This Python script is designed to download, process, and aggregate ERA-5 and ERA-5 Land reanalysis data for specific variables, years, months, and regions. The script interacts with the Climate Data Store (CDS) API, performs spatial processing using GeoJSON files, and allows users to aggregate the data temporally. The processed and aggregated data is saved in CSV format.
+This Python script is designed to download, process, and aggregate [ERA-5]([url](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels)) and [ERA-5 Land]([url](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land?tab=overview)) reanalysis data for specific variables, years, months, and regions. The script interacts with the Climate Data Store (CDS) API, performs spatial processing using GeoJSON files, and allows users to aggregate the data temporally. The processed and aggregated data is saved in CSV format.
 
 ## Table of Contents
 
@@ -23,17 +23,17 @@ The provided Python script is designed to download, process, and aggregate ERA-5
 ## Libraries Used
 
 1. **cdsapi**: Used for accessing the CDS API and downloading reanalysis data.
-2. **xarray (as xr)**: Used for working with labeled multi-dimensional arrays (NetCDF files).
-3. **pandas (as pd)**: Used for data manipulation and CSV file operations.
+2. **xarray**: Used for working with labeled multi-dimensional arrays (NetCDF files).
+3. **pandas**: Used for data manipulation and CSV file operations.
 4. **fuzzywuzzy**: Used for fuzzy string matching during user input.
-5. **geopandas (as gpd)**: Used for working with geospatial data.
+5. **geopandas**: Used for working with geospatial data.
 6. **shapely.geometry**: Used for creating geometric objects for spatial operations.
 
 ## Script Structure
 
 ### Import Statements
 
-The script begins by importing necessary libraries and modules. Notable imports include CDS API client (`cdsapi`), data manipulation libraries (`pandas`, `xarray`), and geospatial libraries (`geopandas`, `shapely.geometry`).
+The script begins by importing necessary libraries and modules. 
 
 ### User Input Functions
 
