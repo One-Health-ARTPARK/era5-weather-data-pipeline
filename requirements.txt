@@ -1,0 +1,6 @@
+cdsapi==0.6.1
+fuzzywuzzy==0.18.0
+geopandas==0.14.0
+pandas==2.1.4
+Shapely==2.0.2
+xarray==2023.6.0
