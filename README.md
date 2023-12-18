@@ -1,6 +1,6 @@
 # ERA-5 and ERA-5 Land Data Extraction and Processing Pipeline
 
-This Python script is designed to download, process, and aggregate [ERA-5]([url](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels)) and [ERA-5 Land]([url](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land?tab=overview)) reanalysis data for specific variables, years, months, and regions. The script interacts with the Climate Data Store (CDS) API, performs spatial processing using GeoJSON files, and allows users to aggregate the data temporally. The processed and aggregated data is saved in CSV format.
+This Python script is designed to download, process, and aggregate [ERA-5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels) and [ERA-5 Land](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-land?tab=overview) reanalysis data for specific variables, years, months, and regions. The script interacts with the Climate Data Store (CDS) API, performs spatial processing using GeoJSON files, and allows users to aggregate the data temporally. The processed and aggregated data is saved in CSV format.
 
 ## Table of Contents
 
