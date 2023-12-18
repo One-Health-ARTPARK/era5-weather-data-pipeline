@@ -39,27 +39,27 @@ The script begins by importing necessary libraries and modules.
 
 1. **`get_user_input(prompt, options=None)`:** A function to get user input, with optional predefined options.
 
-2. **parse_month_input(month_input):** A function to parse user input for months, allowing for individual months or ranges.
+2. **`parse_month_input(month_input)`:** A function to parse user input for months, allowing for individual months or ranges.
 
 ### Data Download Functions
 
-1. **download_era5_data(variable, year, month_input, times, region, dataset):** Downloads ERA-5 or ERA-5 Land data based on user input.
+1. **`download_era5_data(variable, year, month_input, times, region, dataset)`:** Downloads ERA-5 or ERA-5 Land data based on user input.
 
-2. **extract_raw_data(netcdf_file, dataset):** Extracts raw data from the downloaded NetCDF file, converts it to a DataFrame, and saves it as a CSV file.
+2. **`extract_raw_data(netcdf_file, dataset)`:** Extracts raw data from the downloaded NetCDF file, converts it to a DataFrame, and saves it as a CSV file.
 
 ### Spatial Processing Functions
 
-1. **coordinates_to_karnataka_hierarchy(df):** Maps coordinates to Karnataka's subdistrict and district hierarchy.
+1. **`coordinates_to_karnataka_hierarchy(df)`:** Maps coordinates to Karnataka's subdistrict and district hierarchy.
 
-2. **coordinates_to_bbmp_hierarchy(df):** Maps coordinates to BBMP's ward hierarchy.
+2. **`coordinates_to_bbmp_hierarchy(df)`:** Maps coordinates to BBMP's ward hierarchy.
 
-3. **get_geojsons(region_choice):** Returns the appropriate spatial processing function based on the region choice.
+3. **`get_geojsons(region_choice)`:** Returns the appropriate spatial processing function based on the region choice.
 
 ### Data Processing and Aggregation Functions
 
-1. **process_data(df, variable, region_choice, dataset):** Processes spatial data and aggregates it based on quarters.
+1. **`process_data(df, variable, region_choice, dataset)`:** Processes spatial data and aggregates it based on quarters.
 
-2. **perform_aggregation(combined_df, year, variable, region_choice, dataset):** Allows users to perform temporal aggregation and saves the processed data.
+2. **`perform_aggregation(combined_df, year, variable, region_choice, dataset)`:** Allows users to perform temporal aggregation and saves the processed data.
 
 ### Main Execution
 
