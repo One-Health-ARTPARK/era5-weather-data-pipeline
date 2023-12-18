@@ -78,13 +78,27 @@ The script's main execution follows these steps:
 ## Usage
 
 1. Clone the repository.
+      ```bash
+      git clone https://github.com/One-Health-ARTPARK/era5-weather-data-pipeline.git
+  
 2. Install dependencies.
+     ```bash
+     pip install -r requirements.txt
+      
 3. Sign up on the CDS Website. Copy the URL, UID and API_KEY.
-4. Create a nano script in the terminal by executing - nano ~/. cdsapirc
+   
+4. Create a file using nano text editor in the terminal
+     ```bash
+     nano ~/.cdsapirc
+    
 5. Paste the URL, UID and API_KEY as:
-   url: <paste_url_here>
-   key: <paste_uid_here>:<paste_apikey_here>
-6. Run the script: python weather_data_pipeline.py
+      ```bash
+       url: <paste_url_here>
+       key: <paste_uid_here>:<paste_apikey_here>
+      
+7. Run the script. 
+      ```bash
+      python weather_data_pipeline.py
 
 ## Important Notes
 
