@@ -6,13 +6,7 @@ This Python script is designed to download, process, and aggregate [ERA-5](https
 
 - [Overview](#overview)
 - [Libraries Used](#libraries-used)
-- [Script Structure](#script-structure)
-  - [Import Statements](#import-statements)
-  - [User Input Functions](#user-input-functions)
-  - [Data Download Functions](#data-download-functions)
-  - [Spatial Processing Functions](#spatial-processing-functions)
-  - [Data Processing and Aggregation Functions](#data-processing-and-aggregation-functions)
-  - [Main Execution](#main-execution)
+- [Script Structure](#script-structure)  
 - [Usage](#usage)
 - [Important Notes](#important-notes)
 
