@@ -37,7 +37,7 @@ The script begins by importing necessary libraries and modules.
 
 ### User Input Functions
 
-1. **get_user_input(prompt, options=None):** A function to get user input, with optional predefined options.
+1. **`get_user_input(prompt, options=None)`:** A function to get user input, with optional predefined options.
 
 2. **parse_month_input(month_input):** A function to parse user input for months, allowing for individual months or ranges.
 
